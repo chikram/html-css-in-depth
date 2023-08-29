@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>little lemon</title>
+</head>
+
+<body>
+    <header>
+        <img src="logo.png" alt="logo picture" />
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="location.html">Location</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form>
+            <div>
+                <input type="text" name="user_first_name" id="user_first_name" placeholder="First Name" minlength="5" />
+            </div>
+            <div>
+                <input type="text" name="user_second_name" id="user_second_name" placeholder="Last Name"
+                    maxlength="8" />
+            </div>
+            <div>
+                <input type="email" name="user_email" id="user_email" placeholder="Enter Email" required />
+            </div>
+            <div>
+                <input type="tel" id="phone" name="phone" placeholder="Enter phone number"
+                    pattern="”^(?:0|\+?44)(?:\d\s?){9,10}$”" />
+            </div>
+            <div>
+                <input type="password" name="en_password" id="password" placeholder="Enter Password" />
+            </div>
+            <div>
+                <input type="password" name="confirm_password" id="con_password" placeholder="confirm Password" />
+            </div>
+            <div>
+                <input type="file" id="gallery" name="gallery" multiple />
+            </div>
+            <div>
+                <button>Submit</button>
+            </div>
+            <div>
+                <fieldset id="size">
+                    <input type="radio" value="2" name="size" />2-Person Table
+                    <input type="radio" value="4" name="size" checked />4-Person Table
+                    <input type="radio" value="6" name="size" />6-Person Table
+                </fieldset>
+                <fieldset id="loc">
+                    <input type="radio" name="loc" value="location" checked /> Indoor
+                    <input type="radio" name="loc" value="location" /> Outdoor
+                </fieldset>
+            </div>
+            <div>
+                <label for="booking_date">Booking Date</label>
+                <input type="date" name="booking_date" id="booking_date
+                " />
+            </div>
+            <div>
+                <label for="booking_range">People Range</label>
+                <input type="range" id="booking_range" min="2" max="10" value="4"
+                    oninput="this.nextElementSibling.value=this.value" />
+                <output>4</output>
+            </div>
+            <div>
+                <label for="booking_location">Location</label>
+                <input id="booking_location" name="booking_location" list="location" />
+                <datalist id="location">
+                    <option value="Downtown"></option>
+                    <option value="Uptown"></option>
+                </datalist>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>Copyright little lemon</p>
+    </footer>
+</body>
+
+</html>

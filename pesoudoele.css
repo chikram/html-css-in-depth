@@ -1,0 +1,23 @@
+.mypage{
+    font-family: 'Courier New', Courier, monospace;
+}
+a[href]{
+    color: brown;
+}
+a:link{
+    color: aqua;
+}
+a:visited{
+    color: purple;
+}
+a:hover{
+    background:brown;
+    color: white;
+}
+.mybutton{
+    font-family: 'Courier New', Courier, monospace;
+}
+.mybutton :active{
+background-color: blue;
+transform: scale(0.89);
+}
